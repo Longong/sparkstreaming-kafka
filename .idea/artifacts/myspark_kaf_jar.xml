@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="myspark-kaf:jar">
+    <output-path>$PROJECT_DIR$/../myspark-kaf/out/artifacts/myspark_kaf_jar</output-path>
+    <root id="archive" name="myspark-kaf.jar">
+      <element id="module-output" name="myspark-kaf" />
+      <element id="module-output" name="myspark-kaf-build" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/../myspark-kaf/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
