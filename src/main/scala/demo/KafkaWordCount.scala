@@ -19,7 +19,7 @@ object KafkaWordCount{
     val lines = lineMap.map(_._2)
     val words = lines.flatMap(_.split(" "))
     val pair = words.map(x => (x,1))
-    val wordCounts = pair.reduceByKeyAndWindow(_ + _,_ - _,Minutes(2),Seconds(10),2) //这行代码的含义在下一节的窗口转换操作中会有介绍
+    val wordCounts = pair.reduceByKeyAndWindow(_ + _,_ - _,Minutes(2),Seconds(10),2)
     wordCounts.print
     ssc.start
     ssc.awaitTermination
